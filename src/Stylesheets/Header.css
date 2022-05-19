@@ -1,0 +1,70 @@
+.main-header,
+.main-header > .header-shadow,
+.main-header > .header-content,
+.main-header > .header-content > .sitemap,
+.main-header > .header-content > .admin,
+.main-header > .header-content > .admin > .admin-avatar {
+    display: flex;
+}
+
+.main-header {
+    justify-content: center;
+    position: sticky;
+    top: 10px;
+    flex: 0 1 100%;
+    height: 65px;
+    z-index: 500;
+}
+
+.main-header > .header-shadow,
+.main-header > .header-content {
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /* box-shadow: 0 0 15px 5px rgba(44, 43, 43, 0.459);
+    box-shadow: 0 0 15px 5px rgba(199, 199, 199, 0.233); */
+}
+
+.main-header > .header-shadow {
+    box-shadow: 0 0 10px 5px rgba(179, 179, 179, 0.192);
+    width: 94%;
+}
+
+.main-header > .header-content > .menu-toggle-btn,
+.main-header > .header-content > .admin {
+    margin: 0 10px;
+    align-items: center;
+}
+
+.main-header > .header-content > .sitemap {
+    flex: 1;
+    align-items: center;
+    height: 100%;
+    font-size: 13px;
+}
+
+.main-header > .header-content > .admin > .admin-avatar,
+.main-header > .header-content > .admin > .notif-toggle,
+.main-header > .header-content > .admin > .messages-toggle {
+    margin: 0 5px;
+}
+
+.main-header > .header-content > .admin > .admin-avatar {
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(242, 242, 242, 1);
+    border-radius: 50%; 
+}
+
+@media screen and (max-width: 750px) {
+    .main-header > .header-content > .sitemap {
+        display: none;
+    }
+
+    .main-header > .header-content > .menu-toggle-btn {
+        flex: 1;
+        justify-content: flex-start;
+    }
+}

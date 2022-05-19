@@ -1,0 +1,26 @@
+
+.theme-solid-container {
+   border-radius: 6px;
+   background-color: white;
+}
+
+.theme-box-shadow {
+   box-shadow: 0 0 5px 1px rgba(182, 180, 180, 0.342);
+}
+
+/* Background Colors */
+.main-container {
+   background-color: rgba(242, 242, 242, 75%);
+}
+
+/* Text color */
+
+/* *[=light][texture=solid] {
+   color: rgb(46, 45, 45);
+}
+
+*[mode=light][texture=light] {
+    color: rgb(117, 116, 116);
+ } */
+
+

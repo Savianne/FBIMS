@@ -1,0 +1,24 @@
+.color-scheme-picker-container,
+.color-scheme-picker-container > .color-scheme-item {
+    display: flex;
+}
+
+.color-scheme-picker-container {
+    flex: 0 1 100%;
+    height: fit-content;
+    gap: 10px;
+    padding: 0 15px;
+    flex-wrap: wrap;
+    /* background-color: aqua; */
+    align-items: center;
+    /* color: rgb(1, 104, 64); */
+}
+
+.color-scheme-item {
+    flex: 0 0 60px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    transition: background-color 300ms ease-in;
+}

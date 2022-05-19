@@ -1,0 +1,68 @@
+.member-profile-action-group,
+.member-profile-action-group > .action-group {
+    display: flex;
+}
+
+.member-profile-action-group {
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 250px;
+    min-height: 270px;
+    max-height: 270px;
+    padding: 15px 0;
+}
+
+.member-profile-action-group > .avatar-holder {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    border-width: 5px;
+}
+
+.member-profile-action-group > i {
+    font-size: 130px;
+    height: fit-content;
+}
+
+.member-profile-action-group > .warning {
+    /* width: 100%; */
+    margin-top: 30px;
+    /* margin-bottom: 20px; */
+    height: fit-content;
+    font-size: 15px;
+}
+
+.member-profile-action-group > .gender-row,
+.member-profile-action-group > .membership-row {
+    width: 100%;
+    text-align: center;
+}
+
+.member-profile-action-group > .member {
+    font-size: 18px;
+    text-align: center;
+}
+
+.member-profile-action-group > .action-group {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-width: 0;
+    border-top-width: 1.5px;
+    margin-top: auto;
+    padding: 15px 0 0 0;
+    height: fit-content;
+    border-radius: 0;
+}
+
+.member-profile-action-group > .action-group > .btn-edit {
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 1100px) {
+    .member-profile-action-group {
+        display: none;
+    }
+}

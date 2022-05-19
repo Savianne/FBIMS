@@ -1,0 +1,14 @@
+.chart-container {
+    display: flex;
+    flex: 0 1 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.chart-container > .chart-wraper {
+    display: flex;
+    width: 250px;
+    height: 250px;
+}

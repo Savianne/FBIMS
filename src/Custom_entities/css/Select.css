@@ -1,0 +1,35 @@
+
+.select {
+    position: relative;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    align-items: center;
+   
+    /* background-color: white; */
+    margin: 5px;
+}
+
+.select > select,
+.select > select:hover,
+.select > select:active,
+.select > select:focus {
+    display: flex;
+    flex: 1;
+    outline: 0;
+    padding: 5px;
+    border-width: 2px;
+    background-color: rgba(255, 255, 255, 0);
+    outline: 2px solid rgba(255, 255, 255, 0);
+    transition: outline 300ms linear;
+}
+
+.select > select:focus {
+    outline-color: rgba(116, 241, 245, 0.432);
+}
+
+.select > .error-field:focus {
+    outline-color: rgba(245, 116, 116, 0.432);
+}

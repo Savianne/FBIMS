@@ -1,0 +1,61 @@
+
+@font-face {
+    font-family: IndieFlowerRegular;
+    src: url(http://localhost:3000/assets/fonts/IndieFlower-Regular.ttf);
+}
+
+@font-face {
+    font-family: LexendVariableFontwght;
+    src: url(http://localhost:3000/assets/fonts/Lexend-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Sen-Regular;
+    src: url(http://localhost:3000/assets/fonts/Sen-Regular.ttf);
+}
+
+body {
+    font-family: Sen-Regular;
+    line-height: 1.3;
+}
+
+h1 { font-size: 2em }
+
+h2 { font-size: 1.80em }
+
+h3 { font-size: 1.60em }
+
+h4 { font-size: 1.30em }
+
+h5 { font-size: 1.10em }
+
+h6 { font-size: 1em }
+
+
+/* This is the main text. usually used for headings */
+.main-text {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+/* This is strong text, semi bold */
+.strong-text {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+/* This is the normal text */
+.normal-text {
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.small-text {
+    font-size: 0.9em;
+    font-weight: 100;
+}
+
+.system-name {
+    font-size: 30px;
+    font-weight: 100;
+}

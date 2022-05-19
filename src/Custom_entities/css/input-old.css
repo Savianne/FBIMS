@@ -1,0 +1,62 @@
+.input,
+.input-disabled {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.input:hover {
+    background-color: rgba(255, 255, 255, 0.329);
+}
+
+input, input:active, input:focus {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    outline: 0;
+    border: 0;
+}
+
+input[state='init']:focus {
+    outline: 1.5px solid rgba(0, 94, 170, 0.479);
+    background-color: white;
+    color: rgba(0, 37, 70, 0.993);
+}
+
+input[state='onerror'] {
+    outline: 1.5px solid rgb(243, 22, 6);
+    background-color: white;
+    color: rgba(0, 37, 70, 0.993);
+}
+input[state='success'] {
+    outline: 1.5px solid rgb(7, 243, 58);
+    background-color: white;
+    color: rgba(0, 37, 70, 0.993);
+}
+
+input[state='disabled'] {
+    background-color: white;
+    color: rgba(0, 37, 70, 0.993);
+    opacity: 0.50;
+}
+
+.icn-error, 
+.icn-success {
+    position: absolute;
+    right: 5px;
+}
+
+.icn-error {
+    color:rgb(243, 22, 6);
+}
+
+.icn-success {
+    color: rgb(7, 243, 58);
+}

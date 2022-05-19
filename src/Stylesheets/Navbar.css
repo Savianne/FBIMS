@@ -1,0 +1,113 @@
+.main-navigation,
+.main-navigation > .nav-head,
+.main-navigation > .nav-link > a,
+.main-navigation > .nav-link > a > .icon-container,
+.main-navigation > .nav-head > .icon-container,
+.mobile-nav-container,
+.mobile-nav-container > nav > .nav-head,
+.mobile-nav-container > nav > .nav-link > a,
+.mobile-nav-container > nav > .nav-link > a > .icon-container,
+.mobile-nav-container > nav > .nav-head > .icon-container {
+    display: flex;
+}
+
+/* .mobile-nav-container {
+    display: none;
+} */
+
+.main-navigation {
+    position: sticky;
+    top: 11px;
+    /* flex: 0 0 220px; */
+    width: 0;
+    flex-wrap: wrap;
+    height: fit-content;
+    padding: 5px 0 20px 0;
+    transition: width 300ms ease-in-out, background-color 300ms ease-in;
+    overflow-x: hidden;
+}
+
+.main-navigation > .nav-head, 
+.main-navigation > .nav-link,
+.main-navigation > .nav-link > a,
+.mobile-nav-container > nav > .nav-head, 
+.mobile-nav-container > nav > .nav-link,
+.mobile-nav-container > nav > .nav-link > a {
+    height: fit-content;
+    flex: 0 0 100%;
+    align-items: center;
+}
+
+.main-navigation > .nav-link,
+.main-navigation > .nav-link > a,
+.mobile-nav-container > nav  > .nav-link,
+.mobile-nav-container > nav > .nav-link > a {
+    height: 56px;
+} 
+
+.main-navigation > .nav-link,
+.mobile-nav-container > nav  > .nav-link {
+    transition: opacity 300ms linear;
+}
+
+.main-navigation > .nav-link:hover,
+.mobile-nav-container > nav > .nav-link:hover {
+    opacity: 0.50;
+}
+
+.main-navigation > .nav-link > a > .icon-container,
+.main-navigation > .nav-head > .icon-container,
+.mobile-nav-container > nav > .nav-link > a > .icon-container,
+.mobile-nav-container > nav > .nav-head > .icon-container  {
+    width: 100px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-navigation > .nav-head > .icon-container,
+.mobile-nav-container > nav > .nav-head > .icon-container {
+    flex: 0 1 100%;
+}
+
+.main-navigation > .nav-link > a > .icon-container > .active-indicator-bar,
+.mobile-nav-container > nav > .nav-link > a > .icon-container > .active-indicator-bar {
+    height: 0;
+    width: 3px;
+    position: absolute;
+    left: 18px;
+    transition: height 200ms linear;
+}
+
+.main-navigation > .nav-link > a > .nav-item-txt,
+.mobile-nav-container > nav > .nav-link > a > .nav-item-txt {
+    font-size: 14px;
+    /* font-weight: 600; */
+}
+
+@media screen and (max-width: 750px) {
+    /* .main-navigation {
+        display: none;
+    } */
+
+    .mobile-nav-container {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(236, 236, 236, 0.034);
+        /* backdrop-filter: blur(2.5px); */
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 600;
+        overflow-x: hidden;
+        /* transition: width 300ms ease-in-out; */
+    }
+    
+    .mobile-nav-container > nav {
+        display: inline-block;
+        width: 250px;
+        height: 100%;
+        overflow-y: auto;
+        padding-top: 5px;
+    }
+}

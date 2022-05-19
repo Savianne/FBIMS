@@ -1,0 +1,120 @@
+/* sizes and positioning of all main components within the tree will be placed here */
+a, a:active, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.main-container,
+.top-padding,
+.base-container,
+.side-content,
+.fixed-aside,
+.scrolling-content,
+.fixed-aside,
+.fixed-container {
+    display: flex;
+}
+
+.main-container {
+    position: relative;
+    top: 0;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.top-padding {
+    position: sticky;
+    top: 0;
+    flex: 1 0 100%;
+    height: 10px;
+    z-index: 400;
+}
+
+.base-container {
+    position: relative;
+    /* position: sticky;
+    top: 0; */
+    padding: 0 20px;
+    justify-content: center;
+    max-width: 2000px;
+    flex: 1;
+    height: 100%;  
+    overflow-y: scroll;
+}
+
+.side-content {
+    flex: 1;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin-left: 10px;
+    height: fit-content;
+    justify-content: center;
+}
+
+.scrolling-content {
+    flex: 1;
+    /* justify-content: center; */
+    margin-top: 15px;
+    margin-bottom: 20px;
+    height: fit-content;
+}
+
+.fixed-aside {
+    position: sticky;
+    top: 93px;
+    margin: 15px 0 0 10px;
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.fixed-container {
+    width: 290px;
+    height: fit-content;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .base-container {
+        padding: 0 10px;
+    }
+    /* .about-content-section {
+        padding: 10px 20px;
+    } */
+}
+
+@media screen and (max-width: 1100px) {
+    .side-content {
+        justify-content: flex-start;
+    }
+    
+    .scrolling-content {
+        flex: 0 1 100%;
+    }
+
+    .fixed-aside {
+        margin: 15px 0 70px 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .side-content {
+        margin: 0;
+    }
+}

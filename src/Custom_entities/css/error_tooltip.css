@@ -1,0 +1,29 @@
+
+  /* Tooltip */
+.tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.884);
+  color: #fff;
+  font-size: 11px;
+  padding: 3px 0;
+  border-top: 3px solid rgb(243, 22, 6);
+  border-radius: 3px;
+  position: absolute;
+  z-index: 10;
+  top: 120%;
+}
+
+/* Tooltip arrow */
+.tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: 108%;
+  right: 10px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent rgb(243, 22, 6) transparent;
+}
+

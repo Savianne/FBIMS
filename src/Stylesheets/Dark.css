@@ -1,0 +1,27 @@
+
+.theme-solid-container {
+    border-radius: 6px;
+    background-color: rgba(51, 51, 51, 0.356);
+ }
+ 
+ .theme-box-shadow {
+    box-shadow: none;
+ }
+ 
+ /* Background Colors */
+ .main-container {
+    background-color: #141414;
+ }
+ 
+ /* Text color */
+ 
+ *[mode=light][texture=solid] {
+    color: white;
+ }
+ 
+ *[mode=light][texture=light] {
+     color: white;
+  }
+ 
+ 
+ 

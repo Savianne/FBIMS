@@ -1,0 +1,42 @@
+.more-actions-group,
+.more-actions-group > .container-body,
+.more-actions-group > .container-body > .action {
+    display: flex;
+}
+
+.more-actions-group {
+    width: 250px;
+    height: fit-content;
+    flex-direction: column;
+    border-width: 0;
+}
+
+.more-actions-group > .container-head {
+    padding: 10px;
+    font-size: 14px;
+    border-width: 0;
+    border-bottom-width: 1.5px;
+    border-radius: 0;
+}
+
+.more-actions-group > .container-body {
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.more-actions-group > .container-body > .action {
+    width: 100%;
+    margin: 2px 0;
+    padding: 3px;
+    align-items: center;
+}
+
+.more-actions-group > .container-body > .selected-items-count {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.more-actions-group > .container-body > .action > p {
+    margin-left: 5px;
+    font-size: 12px;
+}

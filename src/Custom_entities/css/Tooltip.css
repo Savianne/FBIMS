@@ -1,0 +1,16 @@
+.tooltip {
+    display: flex;
+    background-color: black;
+}
+
+
+/* Tooltip arrow */
+.tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: 108%;
+    right: 10px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent rgb(243, 22, 6) transparent;
+  }
